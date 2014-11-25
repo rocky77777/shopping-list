@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header class="head">
+		<div class="icon">
+			<img src="cart.png" height="50px" width="50px">
+		</div>
+		<div class="title">
+			<div class="sl">
+				<h1>Billy's Shopping List</h1>
+			</div>
+		</div>
+	</header>
+	<section class ="main">
+		<div class="input">
+			<h5>
+				Type in the box and then press the 'add' button to register everything you're going to buy, but forget about and leave in the fridge until it goes bad because you go out to restaurants every night instead of cooking.
+			</h5>
+			<h5>
+				After you buy the item, click the 'Bought it' button. You'll still be able to see the item, though. If you want to delete it off the list, click the 'CLEAR ALL PURCHASED ITEMS' button.
+			</h5>
+			<div id="blank">You're supposed to enter an item into the box before you press the 'add' button so that it gets added to your list of stuff you're not going to eat.</div>
+			<br/>
+			<button id="addbutt">Click this to add the below item to the list.</button>
+			<br/>
+			<br/>
+			<input type="text" name="items" id="additem">
+			<br/>
+			<br/>
+
+			
+		</div>
+		<div class="list">
+			<p>List of unfortunate food doomed to spoil:</p>
+			<ul>
+				<li class="bought">milk</li>
+				<li class="notbought"><button class="boughtit">Bought it!</button>bread</li>
+			</ul>
+		</div>
+		<div class="buttons">
+			<button id="clearall">CLEAR ALL PURCHASED ITEMS</button>
+		</div>
+		<div class="message">
+			<p class="m">You know you're just going to go to the restaurant - probably even on your way back from the grocery store!</p>
+			<p class="m2"></p>
+		</div>
+	</section>
+</body>
+</html>
